@@ -1,6 +1,6 @@
 # FPGAWebApp-Frontend
 
-Master's thesis Manjunath Korisetru
+Master's thesis Manjunath Korisetru - You can access the Web App via https://fpgawebapp.netlify.app/
 
 ## Topic - FPGA-Database: Web Application for Interactive Visualization of FPGA Device specifications
 
