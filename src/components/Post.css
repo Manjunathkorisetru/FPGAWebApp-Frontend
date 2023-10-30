@@ -1,0 +1,7 @@
+.center_div {
+  display: grid;
+  place-items: center;
+  border-style: ridge;
+  height: 50vh;
+  width: 100%;
+}
