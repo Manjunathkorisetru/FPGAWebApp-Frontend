@@ -20,7 +20,9 @@ function Home() {
   const [count, setCount] = useState();
 
   const fetchCountData = async () => {
-    const { data } = await axios.get("http://localhost:4000/count");
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/count"
+    );
 
     setCount(data);
   };

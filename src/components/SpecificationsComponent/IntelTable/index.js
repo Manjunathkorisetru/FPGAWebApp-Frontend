@@ -25,13 +25,16 @@ function TableFpga(props) {
   const manufacturer = props.manufacturer;
 
   const fetchPostList = async (variant, fam, manufacturer) => {
-    const { data } = await axios.get("http://localhost:4000/fpga", {
-      params: {
-        variant: variant,
-        family: fam,
-        manufacturer: manufacturer,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/fpga",
+      {
+        params: {
+          variant: variant,
+          family: fam,
+          manufacturer: manufacturer,
+        },
+      }
+    );
 
     setPosts(data);
   };

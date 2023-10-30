@@ -65,6 +65,7 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  margin-top: 10vh;
 `;
 
 export const FooterContent = styled.div`

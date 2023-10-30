@@ -27,7 +27,10 @@ function Post() {
       series: input.series,
       device: input.device,
     };
-    axios.post("http://localhost:4000/fpga/create", newNote);
+    axios.post(
+      "https://mysterious-galoshes-moth.cyclic.app/fpga/create",
+      newNote
+    );
   }
 
   return (

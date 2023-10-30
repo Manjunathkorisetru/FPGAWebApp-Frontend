@@ -20,35 +20,44 @@ export default function ComparisonLogic(props) {
   //console.log(devices2.length);
 
   const fetchIntel1List = async (variant, fam, devices) => {
-    const { data } = await axios.get("http://localhost:4000/compare", {
-      params: {
-        variant: variant,
-        family: fam,
-        device: devices,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/compare",
+      {
+        params: {
+          variant: variant,
+          family: fam,
+          device: devices,
+        },
+      }
+    );
     setIntel1(data);
   };
 
   const fetchIntel2List = async (variant2, fam2, devices2) => {
-    const { data } = await axios.get("http://localhost:4000/compare", {
-      params: {
-        variant: variant2,
-        family: fam2,
-        device: devices2,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/compare",
+      {
+        params: {
+          variant: variant2,
+          family: fam2,
+          device: devices2,
+        },
+      }
+    );
     setIntel2(data);
   };
 
   const fetchIntel3List = async (variant3, fam3, devices3) => {
-    const { data } = await axios.get("http://localhost:4000/compare", {
-      params: {
-        variant: variant3,
-        family: fam3,
-        device: devices3,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/compare",
+      {
+        params: {
+          variant: variant3,
+          family: fam3,
+          device: devices3,
+        },
+      }
+    );
     setIntel3(data);
   };
 

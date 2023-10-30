@@ -67,12 +67,15 @@ export default function ComparisonFilter() {
       setVariant(null);
     }
 
-    const { data } = await axios.get("http://localhost:4000/fpga", {
-      params: {
-        variant: variant,
-        family: fam,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/fpga",
+      {
+        params: {
+          variant: variant,
+          family: fam,
+        },
+      }
+    );
     setDeviceList(data);
   };
 
@@ -87,12 +90,15 @@ export default function ComparisonFilter() {
     ) {
       setVariant2(null);
     }
-    const { data } = await axios.get("http://localhost:4000/fpga", {
-      params: {
-        variant: variant2,
-        family: fam2,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/fpga",
+      {
+        params: {
+          variant: variant2,
+          family: fam2,
+        },
+      }
+    );
 
     setDeviceList2(data);
   };
@@ -108,12 +114,15 @@ export default function ComparisonFilter() {
     ) {
       setVariant3(null);
     }
-    const { data } = await axios.get("http://localhost:4000/fpga", {
-      params: {
-        variant: variant3,
-        family: fam3,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/fpga",
+      {
+        params: {
+          variant: variant3,
+          family: fam3,
+        },
+      }
+    );
 
     setDeviceList3(data);
   };

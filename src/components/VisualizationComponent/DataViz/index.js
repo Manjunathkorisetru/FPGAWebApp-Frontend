@@ -157,30 +157,39 @@ function DataViz() {
   const [value2, setValue2] = useState([]);
 
   const fetchVizData = async (fam) => {
-    const { data } = await axios.get("http://localhost:4000/vis", {
-      params: {
-        family: fam,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/vis",
+      {
+        params: {
+          family: fam,
+        },
+      }
+    );
     setValue(data);
   };
 
   const fetchVizData1 = async (fam1) => {
-    const { data } = await axios.get("http://localhost:4000/vis", {
-      params: {
-        family: fam1,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/vis",
+      {
+        params: {
+          family: fam1,
+        },
+      }
+    );
 
     setValue1(data);
   };
 
   const fetchVizData2 = async (fam2) => {
-    const { data } = await axios.get("http://localhost:4000/vis", {
-      params: {
-        family: fam2,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/vis",
+      {
+        params: {
+          family: fam2,
+        },
+      }
+    );
     setValue2(data);
   };
 

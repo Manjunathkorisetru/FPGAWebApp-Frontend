@@ -13,11 +13,14 @@ function XilinxTable(props) {
   const fam = props.family;
 
   const fetchPostList = async (fam) => {
-    const { data } = await axios.get("http://localhost:4000/fpga", {
-      params: {
-        family: fam,
-      },
-    });
+    const { data } = await axios.get(
+      "https://mysterious-galoshes-moth.cyclic.app/fpga",
+      {
+        params: {
+          family: fam,
+        },
+      }
+    );
     setPosts(data);
   };
 
