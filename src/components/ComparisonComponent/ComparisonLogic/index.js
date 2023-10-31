@@ -62,14 +62,14 @@ export default function ComparisonLogic(props) {
   };
 
   useEffect(() => {
-    if (fam) {
+    if (fam !== "" && variant !== "" && devices !== "") {
       fetchIntel1List(variant, fam, devices);
     }
 
-    if (fam2) {
+    if (fam2 !== "" && variant2 !== "" && devices2 !== "") {
       fetchIntel2List(variant2, fam2, devices2);
     }
-    if (fam3) {
+    if (fam3 !== "" && variant3 !== "" && devices3 !== "") {
       fetchIntel3List(variant3, fam3, devices3);
     }
   }, [

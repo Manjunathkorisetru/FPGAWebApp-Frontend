@@ -239,13 +239,13 @@ export default function ComparisonFilter() {
   };
 
   useEffect(() => {
-    if (fam) {
+    if (fam !== "" && variant !== "") {
       fetchIntelDeviceList(variant, fam);
     }
-    if (fam2) {
+    if (fam2 !== "" && variant2 !== "") {
       fetchIntelDeviceList2(variant2, fam2);
     }
-    if (fam3) {
+    if (fam3 !== "" && variant3 !== "") {
       fetchIntelDeviceList3(variant3, fam3);
     }
   }, [variant, variant2, variant3, fam, fam2, fam3]);

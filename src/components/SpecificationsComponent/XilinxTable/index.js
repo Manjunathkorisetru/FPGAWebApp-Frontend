@@ -25,7 +25,9 @@ function XilinxTable(props) {
   };
 
   useEffect(() => {
-    fetchPostList(fam);
+    if (fam !== "") {
+      fetchPostList(fam);
+    }
   }, [fam]);
 
   return (

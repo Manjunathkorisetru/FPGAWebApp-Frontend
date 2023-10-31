@@ -40,7 +40,9 @@ function TableFpga(props) {
   };
 
   useEffect(() => {
-    fetchPostList(variant, fam, manufacturer);
+    if (variant !== "" && fam !== "" && manufacturer !== "") {
+      fetchPostList(variant, fam, manufacturer);
+    }
   }, [variant, fam, manufacturer]);
 
   let FamList = [];

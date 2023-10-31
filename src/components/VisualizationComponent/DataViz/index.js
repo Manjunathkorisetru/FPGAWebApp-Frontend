@@ -201,11 +201,15 @@ function DataViz() {
   // }
 
   useEffect(() => {
-    fetchVizData(fam);
-
-    fetchVizData1(fam1);
-
-    fetchVizData2(fam2);
+    if (fam !== "") {
+      fetchVizData(fam);
+    }
+    if (fam1 !== "") {
+      fetchVizData1(fam1);
+    }
+    if (fam2 !== "") {
+      fetchVizData2(fam2);
+    }
   }, [fam, fam1, fam2]);
 
   const result = [...new Set([...value, ...value1, ...value2])];
